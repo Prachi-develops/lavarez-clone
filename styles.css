@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #dad3d3;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2vw 12vw;
+    height: 14vh;
+    z-index: 10;
+   
+   
+}
+
+
+
+
+#nav-bottom{
+  width: 75%;
+  height: 0vh;
+  background-color: black;
+  position: absolute;
+  top: 100%;
+  border-bottom: 1px solid #fff;
+  z-index: 9;
+ 
+
+  
+   
+}
+#options{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.7vw;
+    padding: 0.90vw 1vw;
+    z-index: 10;    
+
+}
+.option-detail h4{
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 0.89vw;
+    margin-bottom: 2.8vw;
+    
+   
+}
+  
+
+.option-detail h5{
+   
+    margin:  1vw 0vw;
+   display: none;
+   overflow: hidden;
+   
+    
+}
+.option-detail h5 span{
+    font-size: 0.78vw;
+    font-weight: 100;
+    display: inline-block;
+    transform:translateY(25px);
+   
+
+}
+button{
+    background-color: #0BA34E;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: 100;
+    padding: 0.80vw 1vw;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2vw;
+
+  
+}
+button svg{
+    height: 1.2vw;
+    margin-left: 0.80vw;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+ 
+}
+
+#page1 h1{
+    text-transform: uppercase;
+    font-size: 8vw;
+    font-weight: 800;
+    
+
+    line-height: 7.4vw;
+
+
+}
+#page1 svg{
+    height: 5.6vw;
+    width: 5.6vw;
+    background-color:  #0BA34E;
+    border-radius: 50%;
+}
+#page1 p{
+    text-align: center;
+    margin-top: 3.6vh;
+    font-size: 0.89vw;
+    font-weight:100;
+    
+  
+}
+#tags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.50vw;
+
+}
+#tags h4{
+    font-weight: 100;
+    font-size: 0.80vw;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid #4d4444;
+    border-radius: 45px;
+    
+}
+#tags h4:nth-last-child(2){
+ border: none;
+}
+#moving-box{
+    
+    position: absolute;
+    bottom: 4%;
+  
+    white-space: nowrap;
+    width: 40%;
+    overflow: hidden;
+    padding: 1vw 1vw;
+}
+#moving-box .move{
+    display: inline-block;
+    animation-name: movee;
+    animation-timing-function: linear;
+    animation-duration: 8.4s;
+    animation-iteration-count: infinite;
+}
+#moving-box .move img{
+    height: 1vw;
+    margin: 0 1vw;
+}
+@keyframes movee {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    
+}
+#blur-left{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18%;
+    z-index: 7;
+    background: linear-gradient(to right, black,transparent);
+}
+#blur-right{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18%;
+    background: linear-gradient(to right, transparent,black);
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color:#000;
+    
+}
