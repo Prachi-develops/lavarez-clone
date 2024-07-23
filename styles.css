@@ -19,7 +19,7 @@ nav{
     padding: 2vw 12vw;
     height: 14vh;
     z-index: 10;
-   
+   background-color:black
    
 }
 
@@ -73,7 +73,7 @@ nav{
    
 
 }
-button{
+#but{
     background-color: #0BA34E;
     display: flex;
     align-items: center;
@@ -101,6 +101,7 @@ button svg{
     align-items: center;
     position: relative;
     z-index: 9;
+  
  
 }
 
@@ -196,6 +197,498 @@ button svg{
 #page2{
     height: 100vh;
     width: 100%;
-    background-color:#000;
+ background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 12vw;
+    padding-bottom: 4vw;
+    padding-right: 12.5vw;
+    border-top: 1px solid #333;
+    
     
 }
+#page2-left{
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 0;
+    padding-bottom: 4.5vw;
+
+
+}
+#page2-left p{
+    font-size: 0.80vw;
+
+}
+#page2-left h5{
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+    
+
+#page2-right{
+    height: 100%;
+    width: 50%;
+  
+    
+ 
+}
+.right-elem{
+    padding-top: 1.7vw;
+    padding-bottom: 5.2vw;
+    position: relative;
+    border-bottom: 1px solid #333;
+}
+.right-elem h2{
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+.right-elem img{
+    height: 5.4vw;
+    width: 5.4vw;
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    scale: 0;
+  
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
+    position: relative;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.center .icon{
+    background-color: white;
+    display: flex;
+    padding: 2.5vw 2.5vw;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50%;
+
+}
+.center .icon i{
+    color: #111;
+    font-size: 2.6vw;
+}
+.center h5{
+ font-size: 0.95vw;
+ text-transform: uppercase;
+ font-weight: 100;
+ background-color: #fff;
+ color: #000;
+ padding: 0.51vw 0.60vw;
+ border-radius: 50px;
+ margin-top: 1vw;
+ opacity: 0;
+ transform: translateY(20%);
+ transition: all ease 0.6s;
+}
+.center:hover h5{
+   opacity: 1;
+   transform: translateY(0%);
+}
+#page3 video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(0.7) scaleY(0);
+    border-radius: 20px;
+    opacity: 0;
+    z-index: 99;
+}
+#page4{
+   min-height: 100vh;
+   width: 100%;
+   position: relative;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 12vw;
+}
+#sec-left{
+    height: 80%;
+    width: 24%;
+
+    border-top: 1.5px solid #000;
+}
+.sec-right{
+    height: 80%;
+    width: 66%;
+    position: relative;
+}
+#sec-left h2{
+    font-size: 2vw;
+    color:#000;
+    font-weight: 100;
+    margin-top: 1.4vw;
+    margin-bottom:18vw;
+    letter-spacing: 0.84px;
+    
+}
+#sec-left h5{
+    font-size: 1vw;
+    font-weight: 100;
+    color:#000;
+    letter-spacing: 0.24px;
+}
+.sec-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.sec-right video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    opacity: 0;
+   
+}
+
+ #page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5vh 10.5vw;
+ }
+ 
+    
+#page5 button {
+    background-color: #0BA34E;
+    padding: 0.9vw 2.5vw;
+    font-weight: 100;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    position: sticky;
+    top: 15%;
+    text-transform: uppercase;
+}
+
+ #page5-right {
+        width: 70%;
+       
+}
+    
+
+
+
+
+#page5-right > p {
+    font-size: 2.1vw;
+
+}
+
+#page5-right > p span {
+    /* background-color: red; */
+    width: 15vw;
+    display: inline-block;
+}
+#p5-content{
+
+  margin-top: 3vw;
+  padding: 1vw 1vw;
+ border-top: 1px solid #fff;
+
+}
+.uxui h1{
+    font-weight: 100;
+}
+.botbox{
+ 
+    display: flex;
+  margin-bottom: 2vw;
+    margin-top: 2vw;
+   
+    
+
+}
+.botbox h4{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 0.80vw;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid #4d4444;
+    border-radius: 45px;
+    
+    
+    
+}
+.page5-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+  position: relative;
+   padding-top: 1vw;
+   padding-bottom: 4.8vw;
+   overflow: hidden;
+   border-top: 1px solid#3e3c3c;
+ 
+    
+}
+.page5-elem p{
+    width: 70%;
+
+    font-size: 0.82vw;
+    position: relative;
+    z-index: 8;
+}
+.page5-elem h3{
+    font-size: 1.7vw;
+    font-weight: 100;
+    position: relative;
+    z-index: 8;
+
+}
+.page5-elem i{
+    font-size: 1.4vw;
+    position: relative;
+    z-index: 8;
+}
+.over{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #333;
+    top: 0;
+    transform: translateY(-100%);
+   opacity: 0;
+   transition: all ease-in-out 0.2s
+}
+.page5-elem:hover h3{
+    padding-left: 0.91vw;
+    transition: all ease-in-out 0.2s
+}
+.page5-elem:hover i{
+    padding-right: 0.91vw;
+    transition: all ease-out 0.2s
+}
+.page5-elem:hover .over{
+    transform: translateY(0%);
+    opacity: 1;
+    border-top: 1.3px solid #fff;
+}
+summary::marker{
+    content: "";
+
+}
+.product h1{
+    font-weight: 100;
+}
+#page6{
+   min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    padding: 2vw 10vw;
+   
+}
+#page6 h1{
+ 
+  font-size: 5vw;
+   padding-left: 30vw;
+  font-weight: 200;
+  color: black;
+  line-height: 4.4vw;
+
+  padding-right: 15vw;
+}
+#page6-content{
+ 
+  margin-top: 1.8vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding-top: 3vw;
+  border-top: 1px solid #dad3d3;
+  
+  
+}
+#page6-content #right-6{
+
+    width: 62%;
+    padding-right: 5vw;
+}
+#page6-content #right-6 p{
+    color: #000;
+    font-size: 1.4vw;
+
+    font-weight: 100;
+    margin: 0vw 3vw 3vw 0;
+    
+   
+
+}
+#blue-btn{
+    background-color: #4b5bff;
+   width: 15vw;
+   height: 7vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 100px;
+
+}
+#blue-btn h4{
+  
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 100;
+}
+.page6-bottom{
+    height: 43vh;
+    width: 100%;
+ 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-top: 1px solid #dad3d3;
+
+}
+#btm6-part1{
+  width: 49%;
+  height: 100%;
+  
+  border-right: 1px solid #dad3d3;
+}
+#btm6-part2{
+    width: 29%;
+    height: 100%;
+ 
+    border-right: 1px solid #dad3d3;
+  }
+  #btm6-part3{
+    width: 20%;
+    height: 100%;
+
+    border-right: 1px solid #dad3d3;
+  }
+  #btm6-part4{
+    width: 20%;
+    height: 100%;
+   
+    border-right: 1px solid #dad3d3;
+  }
+  #btm6-part5{
+    width: 19%;
+    height: 100%;
+   
+  
+  }
+
+
+
+    
+ 
+    
+    .btm6-parts {
+        padding: 3vh 0.6vw;
+    }
+    
+    .btm6-parts h5 {
+        color: #000;
+        font-weight: 500;
+        font-size: 0.9vw;
+        margin-bottom: 4vh;
+    }
+    
+    .btm6-parts h4 {
+        background-color: #111;
+        width: 75%;
+        padding: 5px 10px;
+        margin-bottom: 0.3vh;
+        border-radius: 50px;
+        font-size: 0.85vw;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+    
+    }
+    
+    .btm6-parts h4 span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.5vw;
+        height: 1.5vw;
+        background-color: #333;
+        padding: 0.5vw;
+        border-radius: 50%;
+        margin-right: 1vw;
+    }
+    #btm6-part2 h4:nth-child(2){
+        transform: translateX(0);
+    }
+    #btm6-part2 h4:nth-child(3){
+        transform: translateX(10%);
+    }
+    #btm6-part2 h4:nth-child(4){
+        transform: translateX(20%);
+    }
+    #btm6-part2 h4:nth-child(5){
+        transform: translateX(30%);
+    }
+    #btm6-part2 h4:nth-child(6){
+        transform: translateX(40%);
+    }
+    #btm6-part2 h4:nth-child(7){
+        transform: translateX(50%);
+    }
+    
+    
+    #page7 {
+        min-height: 40vh;
+        background-color: #111;
+    } 
+    #footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+  
